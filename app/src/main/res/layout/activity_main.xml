@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLiveTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txtSamitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ram Leela Samit Ghinhapur Ambedkar Nagar Up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/txtDateDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 days (Monday 5 Nov 2018)"
+            android:textSize="16sp"
+            android:layout_below="@+id/txtSamitName"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/relativeLiveTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

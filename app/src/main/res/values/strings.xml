@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KotlinApp</string>
+
+    <string name="label_mobile">Mobile Number</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+</resources>

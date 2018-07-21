@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_close" />
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnClose"
+        android:id="@+id/imgjob"
+        android:layout_width="128dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_white_logo" />
+
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgjob"
+        android:layout_centerHorizontal="true"
+        android:text="THE ULTIMATE STAFFING ASSISTANCE"
+        android:textColor="@color/color_yellow"
+        android:textSize="12sp" />
+
+
+
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/txtEmail"
+        style="@style/Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/label_mobile"
+        android:inputType="number"
+        android:layout_below="@+id/txtHeading"
+        android:maxLength="10" />
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/txtPassword"
+        style="@style/Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="10dp"
+        android:hint="@string/label_password"
+        android:inputType="textPassword" />
+
+
+    <TextView
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="5dp"
+        android:text="FORGOT PASSWORD?"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+        />
+
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/btnSubmit"
+        style="@style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onSubmitClick"
+        android:text="LOGIN" />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="#61653e"
+        android:onClick="onRegisterClick"
+        android:text="Not Registered? SIGN UP NOW "
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
+
