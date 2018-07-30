@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/videoThumb"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_thumb_video" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/videoThumb"
+        android:text="Logcate Information"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtType"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/videoThumb"
+        android:text="20 May 2017"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/imgTime"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/txtDate"
+        android:layout_toRightOf="@id/videoThumb"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/ic_access_time" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDate"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imgTime"
+        android:text="12:10"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/videoThumb"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

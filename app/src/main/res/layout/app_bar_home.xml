@@ -15,13 +15,14 @@
         android:layout_height="180dp"
         app:layout_constraintTop_toBottomOf="@+id/tabs_main"/>
 
-    <!--<LinearLayout
+    <LinearLayout
         android:id="@+id/dotContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
 
         >
         <ImageView
@@ -52,12 +53,13 @@
 
 
 
-    </LinearLayout>-->
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:background="#D7D7D7"
         android:orientation="vertical">
 
         <LinearLayout
@@ -71,8 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="5dp"
+                android:background="@color/white"
                 >
 
 
@@ -106,8 +107,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
                 >
 
 
@@ -142,9 +143,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
                 >
 
 
@@ -163,10 +163,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
                     android:text="Artist"
                     android:textColor="@color/black"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:textSize="16sp"
                     android:textAlignment="center"
                     />
@@ -183,7 +182,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="3"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="1dp"
             >
 
             <LinearLayout
@@ -192,8 +191,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="5dp"
+                android:background="@color/white"
                 >
 
 
@@ -202,7 +200,7 @@
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:src="@drawable/ic_about_us"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     />
 
 
@@ -210,8 +208,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:text="About Us"
                     android:textAlignment="center"
                     android:textColor="@color/black"
@@ -227,19 +224,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
                 >
-
-
-
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:src="@drawable/ic_gallery"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     />
 
 
@@ -247,11 +241,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
                     android:text="Gallary"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:textAlignment="center"
                     />
 
@@ -264,9 +257,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:layout_marginLeft="1dp"
                 >
 
 
@@ -274,7 +266,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:src="@drawable/ic_video"/>
 
 
@@ -282,18 +274,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
                     android:text="Videos"
                     android:textColor="@color/black"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:textSize="16sp"
                     android:textAlignment="center"
                     />
 
 
             </LinearLayout>
-
-
 
         </LinearLayout>
     </LinearLayout>
