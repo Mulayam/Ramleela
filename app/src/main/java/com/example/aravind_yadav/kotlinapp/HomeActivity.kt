@@ -11,9 +11,11 @@ import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_tab_activity.*
 import kotlinx.android.synthetic.main.custom_toolbar.*
 
-class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class HomeActivity : AppCompatActivity()
+{
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         setSupportActionBar(toolbar)
@@ -22,31 +24,28 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         viewpager_main.adapter = fragmentAdapter
 
          //  tabs_main.setupWithViewPager(viewpager_main)
-
-        val toggle = ActionBarDrawerToggle(
+         /*   val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawer_layout.addDrawerListener(toggle)
-        toggle.syncState()
+                drawer_layout.addDrawerListener(toggle)
+                toggle.syncState()*/
 
-        nav_view.setNavigationItemSelectedListener(this)
+        //  nav_view.setNavigationItemSelectedListener(this)
     }
 
     override fun onBackPressed() {
-        if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
-            drawer_layout.closeDrawer(GravityCompat.START)
-        } else {
+
             super.onBackPressed()
-        }
+
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+   /* override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.home, menu)
         return true
     }
+*/
 
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+   /* override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_camera -> {
@@ -71,5 +70,5 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
-    }
+    }*/
 }
